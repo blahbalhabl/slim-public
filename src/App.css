@@ -9,6 +9,47 @@
   height: 100vh;
   width: 100vw;
 }
-/* .App__container{ */
+.App__container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* } */
+.App__Table {
+  border-collapse: collapse;
+  outline: 1px solid gainsboro;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  width: 80%;
+  height: fit-content;
+}
+
+.App__Table__Header > tr > th {
+  padding: 20px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.App__Table__Row {
+  border-bottom: 1px solid gainsboro;
+}
+
+.App__Table__Row > td {
+  text-align: center;
+  padding: 20px;
+}
+
+.App__Table__Body > tr:last-child {
+  border-bottom: 0;
+}
+
+.App__Download__Button {
+  background-color: rgb(230, 230, 230);
+  outline: 1px solid gainsboro;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
