@@ -7,9 +7,8 @@ const Footer = () => {
       <div className='sb__footer section__padding'>
         <div className='sb__footer-links'>
           <div className='footer__title'>
-          { logo ? <img className="Header_Logo" src={logo} style={{ width: '100px', height: '100px' }} /> : <FontAwesomeIcon icon={icons.user} />}
             <h2>Sanggunian Legislative Information Management</h2>
-            
+            { logo ? <img className="Header_Logo" src={logo} style={{ width: '100px', height: '100px' }} /> : <FontAwesomeIcon icon={icons.user} />}
           </div>
           <div className='sb__footer-links-div'>
                <h4>DILG</h4>
@@ -78,23 +77,6 @@ const Footer = () => {
               <a href='/Cookie'><div><p>Cookies Decleration</p></div></a>
         </div>
       </div>
-      <div className='footer__google-map'>
-            <iframe
-              title="Google Map"
-              width="600"
-              height="450"
-              frameBorder="0"
-              style={{ border: 0 }}
-              src="https://www.google.com/maps/embed/v1/place?q=YOUR_PLACE_ID_OR_ADDRESS&key=YOUR_API_KEY"
-
-              allowFullScreen
-            />
-          </div>
-          
-        </div>
-        <hr></hr>
-        <div className='footer-below'>
-
       </div>
     </div>
     

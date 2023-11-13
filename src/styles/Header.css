@@ -1,14 +1,16 @@
 .Header{
-    background-color:#701d0b;
-    position: fixed;
-    top: 0;
+    background-color:#415a77;
+    /* position: fixed;
+    top: 0; */
     left: 0;
-    width: 100vw;
+    width: 100%;
     justify-content: space-between;
     padding: 20px;
+    padding-right: 40px;
     align-items: center;
     height: fit-content;
     color: white;
+    display: flex;
 }
 .Header__Title > h3 {
     margin-left: 30px;
@@ -17,3 +19,9 @@
     display: flex;
     align-items: center;
 }
+/* .Header__name {
+    align-items: center;
+    display: flex;
+    margin-left: 50px;
+    text-align: center;
+} */
