@@ -1,7 +1,6 @@
 .Footer {
     width: 100%;
-    background-color:#701d0b;
-    box-sizing: border-box;
+    background-color:#415a77;
   }
 .section__padding{
   padding: 4rem 4rem;
@@ -27,6 +26,9 @@
   justify-content: flex-start;
   flex-direction: column;
   color: white;
+}
+.footer__title h2{
+  width: 300px;
 }
 
 a{
