@@ -8,11 +8,14 @@ const Footer = () => {
         <div className='sb__footer-links'>
           <div className='footer__title'>
             <h2>Sanggunian Legislative Information Management</h2>
-            { logo ? <img className="Header_Logo" src={logo} style={{ width: '100px', height: '100px' }} /> : <FontAwesomeIcon icon={icons.user} />}
+            { logo ? <img className="Footer_Logo" src={logo} style={{ width: '300px', height: '300px' , }} /> : <FontAwesomeIcon icon={icons.user} />}
           </div>
           <div className='sb__footer-links-div'>
-               <h4>DILG</h4>
+               <h4>Find Us</h4>
                <a href='/employer'>
+                  <p>Don Honorio Ventura State University</p>
+               </a>
+               {/* <a href='/employer'>
                   <p>Employer</p>
                </a>
                <a href='/employer'>
@@ -20,29 +23,26 @@ const Footer = () => {
                </a>
                <a href='/employer'>
                   <p>Employer</p>
-               </a>
-               <a href='/employer'>
-                  <p>Employer</p>
-               </a>
+               </a> */}
           </div>
           <div className='footer-links__div'>
               <h4>Resources</h4>
               <a href='/resource'>
                 <p>Resource center</p>
               </a>
-              <a href='/resource'>
+              {/* <a href='/resource'>
                 <p>Resource center</p>
               </a>
               <a href='/resource'>
                 <p>Resource center</p>
-              </a>
+              </a> */}
           </div>
           <div className='footer__links__div'>
               <h4>Company</h4>
               <a href='About'>
                 <p>employer</p>
               </a>
-              <h4>Company</h4>
+              {/* <h4>Company</h4>
               <a href='About'>
                 <p>employer</p>
               </a>
@@ -53,7 +53,7 @@ const Footer = () => {
               <h4>Company</h4>
               <a href='About'>
                 <p>employer</p>
-              </a>
+              </a> */}
           </div>
           <div className='footer_links_div'>
             <h4>message us</h4>
@@ -77,6 +77,7 @@ const Footer = () => {
               <a href='/Cookie'><div><p>Cookies Decleration</p></div></a>
         </div>
       </div>
+      
       </div>
     </div>
     
