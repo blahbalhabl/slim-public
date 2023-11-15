@@ -25,7 +25,6 @@
 }
 .header_links h4{
     font-weight: 500;
-    font-display: ;
 }
 /* .li, a {
     font-weight: 500;
@@ -43,11 +42,11 @@
 .nav__links li a{
     transition: all 0,3s ease 0s;
 } 
-.header_links */
+.header_links
 
-/* .Header__name {
+.Header__name {
     align-items: center;
     display: flex;
     margin-left: 50px;
     text-align: center;
-}
+} */
