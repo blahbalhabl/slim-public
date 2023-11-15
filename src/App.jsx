@@ -72,6 +72,7 @@ const App = () => {
                 <td>
                   <button
                     className='App__Download__Button'
+                    disabled
                     onClick={(e) => handleDownload(ordinances.file)}>
                       Download
                   </button>
