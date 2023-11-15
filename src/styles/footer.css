@@ -2,6 +2,10 @@
     width: 100%;
     background-color:#415a77;
   }
+.Footer_Logo{
+  margin: 50px;
+  margin-top: 0;
+}
 .section__padding{
   padding: 4rem 4rem;
 }

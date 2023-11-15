@@ -37,12 +37,8 @@ const Footer = () => {
                 <p>Resource center</p>
               </a> */}
           </div>
-          <div className='footer__links__div'>
+          {/* <div className='footer__links__div'>
               <h4>Company</h4>
-              <a href='About'>
-                <p>employer</p>
-              </a>
-              {/* <h4>Company</h4>
               <a href='About'>
                 <p>employer</p>
               </a>
@@ -53,10 +49,14 @@ const Footer = () => {
               <h4>Company</h4>
               <a href='About'>
                 <p>employer</p>
-              </a> */}
-          </div>
+              </a>
+              <h4>Company</h4>
+              <a href='About'>
+                <p>employer</p>
+              </a>
+          </div> */}
           <div className='footer_links_div'>
-            <h4>message us</h4>
+            <h4>Message us</h4>
             <div className='social media'>
                 <p></p>
             </div>
