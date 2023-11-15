@@ -1,5 +1,5 @@
 import '../styles/footer.css'
-import logo from '..//assets/site-logo.png'
+import logo from '../assets/site-logo.svg'
 
 const Footer = () => {
   return (
@@ -22,6 +22,7 @@ const Footer = () => {
                   <p>Employer</p>
                </a>
                <a href='/employer'>
+
                   <p>Employer</p>
                </a> */}
           </div>
