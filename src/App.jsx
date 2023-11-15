@@ -41,9 +41,26 @@ const App = () => {
     return formattedDate;
   };
 
-  const handleDownload = (file) => {
+  const handleDownload = async (filename, series) => {
     // download logic here
-    console.log(file)
+    try {
+      const response = await axios.get(`${BASE_URL}/public-download/${filename}?type=ordinances&series=${series}`, {
+        responseType: 'blob', // Set the response type to 'blob' to handle binary data
+      });
+      // Create a blob object from the binary data
+      const blob = new Blob([response.data]);
+      // Create a URL for the blob
+      const url = window.URL.createObjectURL(blob);
+      // Create a link element to trigger the download
+      const fileLink = document.createElement('a');
+      fileLink.href = url;
+      fileLink.download = filename;
+      fileLink.click();
+      // Clean up the URL created for the blob
+      window.URL.revokeObjectURL(url);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   useEffect(() => {
@@ -64,16 +81,16 @@ const App = () => {
           </tr>
           </thead>
           <tbody className='App__Table__Body'>
-            {ordinances.map((ordinances, i) => (
+            {ordinances.map((ordinance, i) => (
               <tr className='App__Table__Row' key={i}>
-                <td>{ordinances.title}</td>
-                <td>{formatDate(ordinances.createdAt)}</td>
-                <td>{ordinances.size}</td>
+                <td>{ordinance.title}</td>
+                <td>{formatDate(ordinance.createdAt)}</td>
+                <td>{ordinance.size}</td>
                 <td>
                   <button
                     className='App__Download__Button'
                     disabled
-                    onClick={(e) => handleDownload(ordinances.file)}>
+                    onClick={(e) => handleDownload(e, ordinance.file, ordinance.series)}>
                       Download
                   </button>
                 </td>
