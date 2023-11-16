@@ -41,8 +41,9 @@ const App = () => {
     return formattedDate;
   };
 
-  const handleDownload = async (filename, series) => {
+  const handleDownload = async (e, filename, series) => {
     // download logic here
+    e.preventDefault();
     try {
       const response = await axios.get(`${BASE_URL}/public-download/${filename}?type=ordinances&series=${series}`, {
         responseType: 'blob', // Set the response type to 'blob' to handle binary data
@@ -89,7 +90,6 @@ const App = () => {
                 <td>
                   <button
                     className='App__Download__Button'
-                    disabled
                     onClick={(e) => handleDownload(e, ordinance.file, ordinance.series)}>
                       Download
                   </button>
